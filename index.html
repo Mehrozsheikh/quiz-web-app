@@ -6,27 +6,55 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="styles/nav_bar_styles.css">
+  <link rel="stylesheet" href="styles/home_page_styles.css">
+  <link rel="stylesheet" href="styles/footer_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Elite Quiz</title>
 </head>
 
-<body>
-  <nav>
-    <img width="150px" src="assets/images/logo.png" alt="logo" />
 
-    <div>
-      <a href="/index.html">Home</a>
-      <a href="pages/leaderboard_page.html">Leaderboard</a>
-      <a href="pages/playgame_page.html">Play Game</a>
-      <a href="pages/about_page.html">About</a>
-      <a href="pages/login_page.html">Account</a>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img width="150px" src="assets/images/logo.png" alt="logo" />
     </div>
-  </nav>
-  <img width="100%" height="100%" src="assets/images/background.jpg" alt="background image" />
-  <div>
-    <a href="pages/about_page.html"><button>Learn More</button></a>
-    <a href="pages/playgame_page.html"><button>Play Game</button></a>
+    <div>
+      <nav>
+        <ul>
+          <li class="nav-bar-list"><a class="nav-bar-item" href="index.html">Home</a></li>
+          <li class="nav-bar-list"><a class="nav-bar-item" href="pages/leaderboard_page.html">Leaderboard</a></li>
+          <li class="nav-bar-list"><a class="nav-bar-item" href="pages/playgame_page.html">Play Game</a></li>
+          <li class="nav-bar-list"><a class="nav-bar-item" href="pages/about_page.html">About</a></li>
+          <div id="account-btn">
+            <li> <i class="fa fa-user-plus" style="font-size:20px; color: #F98367; padding-right: 10px;"></i>
+              <a class=" nav-bar-item" href="pages/login_page.html">Account</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
   </div>
-  <div>
+  <div id="main-body">
+    <div>
+      <div style="float: left; padding-right: 80px;"><img width="450" src="assets/images/quiz_illustration_one.png"
+          alt="">
+      </div>
+      <div style="float: right; padding-left: 80px; word-wrap: break-word; width: 400px;">
+        <h1>Lots of quizzes, lots of categories</h1>
+        <p>Train yourself and become a quiz master</p>
+        <div>
+          <a href="pages/playgame_page.html"><button id="play-btn">Let's Play</button></a>
+          <a href="pages/about_page.html"><button id="how-play-btn">How to Play?</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div>
     <h1>How To Play</h1>
     <h3>Features</h3>
     <ul>
@@ -140,18 +168,17 @@
       </ol>
     </ul>
 
-  </div>
-  <hr />
+  </div> -->
   <footer>
-    <p>© 2022 Elite Quiz | Mehroz</p>
     <img width="150px" src="assets/images/logo.png" alt="logo" />
-    <div>
-      <a href="index.html">Home</a>
-      <a href="pages/leaderboard_page.html">Leaderboard</a>
-      <a href="pages/playgame_page.html">Play Game</a>
-      <a href="pages/about_page.html">About</a>
-      <a href="pages/login_page.html">Account</a>
-    </div>
+    <p>Elite Quiz is a quiz game that tests your knowledge on a variety of topics. You can play the game in four
+      different
+      modes: Quiz Zone, Guess The Word, Guess The Number, Maths Mania. You can also view the leaderboard to see how you
+      compare to other players.</p>
+
+    <hr style="background-color: #F98367; border: none; height: 1px;">
+
+    <p>© 2022 Elite Quiz | Mehroz</p>
   </footer>
 </body>
 

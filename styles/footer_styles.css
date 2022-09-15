@@ -1,0 +1,11 @@
+footer{
+    background-color: #000000;
+    color: #F98367;
+    padding: 20px;
+    font-size: 14px;
+}
+footer p{
+    width: 300px;
+    color: white;
+    font-family: sans-serif;
+}
