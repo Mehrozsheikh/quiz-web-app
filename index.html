@@ -7,14 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="assets/images/favicon.ico">
-  <link rel="stylesheet" href="styles/nav_bar_styles.css">
   <link rel="stylesheet" href="styles/home_page_styles.css">
+  <link rel="stylesheet" href="styles/nav_bar_styles.css">
   <link rel="stylesheet" href="styles/footer_styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/dcfeb72d90.js" crossorigin="anonymous"></script>
   <title>Elite Quiz</title>
 </head>
-
-
 
 <body>
   <div class="container">
@@ -39,146 +37,81 @@
 
   </div>
   <div id="main-body">
-    <div>
-      <div style="float: left; padding-right: 80px;"><img width="450" src="assets/images/quiz_illustration_one.png"
-          alt="">
+    <table>
+      <tr>
+        <td>
+          <div style="float: left; padding-right: 80px;"><img width="450px"
+              src="assets/images/quiz_illustration_one.png" alt="">
+          </div>
+        </td>
+        <td>
+          <div style="float: right; padding-left: 80px; word-wrap: break-word; width: 400px;">
+            <h1>Lots of quizzes, lots of categories</h1>
+            <p>Train yourself and become a quiz master</p>
+            <div>
+              <a href="pages/playgame_page.html"><button id="play-btn">Let's Play</button></a>
+              <a href="pages/about_page.html"><button id="how-play-btn">How to Play?</button></a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <footer>
+    <div id="footer-content">
+      <div id="footer-left">
+        <img width="150px" src="assets/images/logo.png" alt="logo" />
+        <p>Elite Quiz is a quiz game that tests your knowledge on a variety of topics. You can play the game in four
+          different
+          modes: Quiz Zone, Guess The Word, Guess The Number, Maths Mania. You can also view the leaderboard to see how
+          you
+          compare to other players.</p>
       </div>
-      <div style="float: right; padding-left: 80px; word-wrap: break-word; width: 400px;">
-        <h1>Lots of quizzes, lots of categories</h1>
-        <p>Train yourself and become a quiz master</p>
-        <div>
-          <a href="pages/playgame_page.html"><button id="play-btn">Let's Play</button></a>
-          <a href="pages/about_page.html"><button id="how-play-btn">How to Play?</button></a>
+      <!-- social icons -->
+      <div id="footer-center">
+        <h1>Contact Us</h1>
+        <div><i class="fa-regular fa-envelope"
+            style="font-size:16px; padding-right: 10px; color: rgb(150, 150, 150); display: inline-block;"></i>
+          <p style="display: inline-block;">mehroz.dev@gmail.com</p>
+        </div>
+        <div><i class="fa fa-phone"
+            style=" font-size:16px; padding-right: 10px; color: rgb(150, 150, 150); display: inline-block;"></i>
+          <p style="display: inline-block;">+92 300 3000000</p>
+        </div>
+
+      </div>
+      <div id="footer-right">
+        <h1>Find Us Here</h1>
+        <div><i class="fa fa-map-marker"
+            style="font-size:16px; padding-right: 10px; color: rgb(150, 150, 150); display: inline-block;"></i>
+          <p style="display: inline-block;">RCET, Gujranwala, Pakistan</p>
+        </div>
+
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=400&amp;height=120&amp;hl=en&amp;q=rachna coll&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+              href="https://mcpenation.com/">MCPE Nation</a></div>
         </div>
       </div>
     </div>
-  </div>
+    <br>
+    <div style="height: 50px;">
+      <hr style="background-color: #F98367; border: none; height: 1px;">
+      <p style="float: left;">© 2022 Elite Quiz | Mehroz</p>
+      <div id="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"
+            style="font-size:20px; color: white; padding-right: 20px;"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-instagram"
+            style="font-size:20px; color: white; padding-right: 20px;"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-linkedin"
+            style="font-size:20px; color: white; padding-right: 20px;"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-youtube"
+            style="font-size:20px; color: white; padding-right: 20px;"></i></a>
+      </div>
+    </div>
 
-  <!-- <div>
-    <h1>How To Play</h1>
-    <h3>Features</h3>
-    <ul>
-      <b>
-        <li>Elite Quiz has four different Modes</li>
-      </b>
-      <ol>
-        <li>
-          Quiz Zone
-        </li>
-        <li>
-          Guess The Word
-        </li>
-        <li>
-          Guess The Number
-        </li>
-        <li>
-          Maths Mania
-        </li>
-      </ol>
-    </ul>
-    <ul>
-      <b>
-        <li>Leaderboard</li>
-      </b>
-      <ol>
-        <li>
-          The leaderboard shows the top 10 players
-        </li>
-        <li>
-          The leaderboard is updated after every game
-        </li>
-      </ol>
-    </ul>
-    <ul>
-      <b>
-        <li>Profile</li>
-      </b>
-      <ol>
-        <li>
-          The profile shows the user's username, email, and points
-        </li>
-        <li>
-          The profile is updated after every game
-        </li>
-      </ol>
-    </ul>
-    <h3>Modes</h3>
-    <ul>
-      <b>
-        <li>Quiz Zone</li>
-      </b>
-      <ol>
-        <li>
-          The user is given 4 options for each question
-        </li>
-        <li>
-          The user is given 1 point for each correct answer
-        </li>
-        <li>
-          The user is given 0 points for each incorrect answer
-        </li>
-      </ol>
-    </ul>
-    <ul>
-      <b>
-        <li>Guess The Word</li>
-      </b>
-      <ol>
-        <li>
-          The user is given a word with missing letters
-        </li>
-        <li>
-          The user is given 1 point for correct answer
-        </li>
-        <li>
-          The user is given 0 points for incorrect answer
-        </li>
-      </ol>
-    </ul>
-    <ul>
-      <b>
-        <li>Guess The Number</li>
-      </b>
-      <ol>
-        <li>
-          The user is given 5 Guesses to guess the number
-        </li>
-        <li>
-          The user is given 1 point for each correct answer
-        </li>
-        <li>
-          The user is given 0 points for each incorrect answer
-        </li>
-      </ol>
-    </ul>
-    <ul>
-      <b>
-        <li>Maths Mania</li>
-      </b>
-      <ol>
-        <li>
-          The user is given 4 options for each Maths question
-        </li>
-        <li>
-          The user is given 1 point for correct guess
-        </li>
-        <li>
-          The user is given 0 points for incorrect guess
-        </li>
-      </ol>
-    </ul>
-
-  </div> -->
-  <footer>
-    <img width="150px" src="assets/images/logo.png" alt="logo" />
-    <p>Elite Quiz is a quiz game that tests your knowledge on a variety of topics. You can play the game in four
-      different
-      modes: Quiz Zone, Guess The Word, Guess The Number, Maths Mania. You can also view the leaderboard to see how you
-      compare to other players.</p>
-
-    <hr style="background-color: #F98367; border: none; height: 1px;">
-
-    <p>© 2022 Elite Quiz | Mehroz</p>
   </footer>
 </body>
 

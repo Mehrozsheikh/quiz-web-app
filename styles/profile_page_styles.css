@@ -1,0 +1,12 @@
+#profile-pic{
+    border-radius: 50%;
+    border: 2px solid #F98367;
+    box-shadow: 0 0 5px #F98367;
+}
+
+#user-email{
+    font-size: 16;
+    font-family: sans-serif;
+    display: inline-block;
+    color: white;
+}

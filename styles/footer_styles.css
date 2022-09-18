@@ -3,9 +3,46 @@ footer{
     color: #F98367;
     padding: 20px;
     font-size: 14px;
+    font-family: sans-serif;
 }
 footer p{
     width: 300px;
-    color: white;
+    color: rgb(150, 150, 150);
     font-family: sans-serif;
+}
+#footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#footer-left{
+    padding-top: 20px;
+}
+
+#social-icons{
+    padding-top: 10px;
+    float: right;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 120px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 120px;
+}
+
+.gmap_iframe {
+    height: 120px !important;
+}
+
+footer a{
+    color: #F98367;
+    text-decoration: none;
 }
