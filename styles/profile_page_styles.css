@@ -10,3 +10,10 @@
     display: inline-block;
     color: white;
 }
+
+h2{
+    font-size: 20;
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+}

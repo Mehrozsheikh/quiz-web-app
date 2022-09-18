@@ -1,0 +1,17 @@
+.select-btn{
+    height: 220px;
+    width: 300px;
+    background-color: #F98367;
+    color: white;
+    font-size: 30px;
+    border-radius: 5%;
+    border: 2px solid #ffaa95;
+}
+
+.select-btn:hover{
+    background-color: #fa9b84;
+}
+
+#form-body a{
+    padding: 30px;
+}
