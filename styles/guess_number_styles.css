@@ -1,0 +1,139 @@
+body {
+    background: #ffefde;
+    font-family: sans-serif;
+    background-image: url(/assets/images/bg.png);
+}
+
+.form {
+    background: #F98367;
+    width: 380px;
+    height: 500px;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #15202b;
+}
+
+hr {
+    width: 370px;
+    height: 2px;
+    background-color: #ffefde;
+    border: none;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 25px;
+}
+
+.guessField {
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #ffefde;
+    border-radius: 30px;
+    background: rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+.guessSubmit {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 30px;
+    font-weight: 700;
+    background: #282828;
+    border: 2px solid #ffefde;
+    transition: 0.3s ease;
+}
+
+.guessSubmit:hover {
+    background: #ffefde;
+    color: #F98367;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    margin-left: 165px;
+    margin-right: 165px;
+    padding: 2px;
+    justify-items: center;
+    margin-top: -10px;
+    font-size: 35px;
+    border: 2px solid #ffefde;
+    border-radius: 50%;
+    color: rgb(81, 255, 0);
+}
+
+.confirm-button {
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 17px;
+    font-weight: 540;
+}
+
+#play-again {
+    display: none;
+}
+
+#mid-box2 {
+    display: none;
+}
+
+#mid-box3 {
+    display: none;
+}
+
+#mid-box2 h1 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+#mid-box2 p {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+#mid-box2 h2 {
+    border: none;
+    font-size: 45px;
+    color: rgb(81, 255, 0);
+    margin-bottom: -20px;
+}
+
+#mid-box3 h2 {
+    border: none;
+    font-size: 50px;
+    color: red;
+}
+
+#yes {
+    background: rgb(4, 167, 4);
+}
+
+#no {
+    background: red;
+    margin-left: 20px;
+}
+
+.confirm-button:hover {
+    transition: ease-in;
+    transition-duration: 0.1s;
+    transform: translateY(-1px);
+}

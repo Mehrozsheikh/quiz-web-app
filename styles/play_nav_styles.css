@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #15202b;
+    clear: both;
+    overflow: auto;
+}
+
+.logo img {
+    float: left;
+    padding: 10px;
+    padding-right: 20px;
+
+}
+
+
+#exit-btn button {
+    float: right;
+    background-color: #F98367;
+    border: none;
+    color: white;
+    padding: 9px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 16px 20px 0 0;
+    cursor: pointer;
+    border-radius: 6px;
+}

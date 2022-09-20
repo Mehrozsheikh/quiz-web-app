@@ -6,10 +6,12 @@
     font-size: 30px;
     border-radius: 5%;
     border: 2px solid #ffaa95;
+    border-style: outset;
 }
 
 .select-btn:hover{
     background-color: #fa9b84;
+    border-style: inset;
 }
 
 #form-body a{

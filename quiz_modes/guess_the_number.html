@@ -6,48 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="/styles/play_nav_styles.css">
+    <link rel="stylesheet" href="/styles/guess_number_styles.css">
     <title>Elite Quiz | Guess The Number</title>
 </head>
 
 <body>
-    <nav>
-        <img width="150px" src="/assets/images/logo.png" alt="logo" />
-        <br>
-        <a href="/pages/playgame_page.html">Exit</a>
-    </nav>
-    <div>
-        <h1>Guess The Number</h1>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img width="150px" src="/assets/images/logo.png" alt="logo" />
+            </div>
+            <div id="exit-btn">
+                <a href="/pages/playgame_page.html"><button>Exit</button></a>
+            </div>
+        </nav>
+    </div>
+    <div class="form">
+        <h1>Guess Number Game</h1>
         <hr>
-        <div>
+        <div id="mid-box1">
             <label for="guessField">Enter a Guess Below</label>
             <br>
-            <input type="text">
+            <input maxlength="1" type="tel" id="guessField" class="guessField">
             <br>
-            <button type="submit">Guess</button>
+            <button type="submit" class="guessSubmit" id="submitguess">OK?</button>
         </div>
-        <div>
+        <div id="mid-box2">
             <h1>CONGRATULATIONS!!!</h1>
-            <p>YOU HAVE GUESSED IT RIGHT IN</p>
+            <p>YOU GUESSED IT RIGHT IN</p>
             <br>
-            <h2>1</h2>
+            <h2 id="tries">1</h2>
             <p>GUESS</p>
         </div>
-        <!-- <div>
+        <div id="mid-box3">
             <h1>OOPS SORRY!!!</h1>
             <p>YOU HAVE GUESSED</p>
             <br>
             <h2>5</h2>
             <p>TIMES</p>
-        </div> -->
-        <hr>
-        <div>
-            <p>Remaining Guesses</p>
-            <h2>5</h2>
         </div>
-        <div>
+        <hr>
+        <div id="rem-guess">
+            <p>Remaining Guesses</p>
+            <h2 id="num-of-guess">5</h2>
+        </div>
+        <div id="play-again">
             <p>Do you want to play again?</p>
-            <button>Yes!</button>
-            <button>No!</button>
+            <button class="confirm-button" id="yes">Yes!</button>
+            <button class="confirm-button" id="no">No!</button>
         </div>
     </div>
 </body>
