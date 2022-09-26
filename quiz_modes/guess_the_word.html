@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles/play_nav_styles.css">
+  <link rel="stylesheet" href="/styles/games_styles.css">
   <link rel="icon" href="/assets/images/favicon.ico">
   <title>Elite Quiz | Guess The Word</title>
 </head>
@@ -21,22 +22,39 @@
       </div>
     </nav>
   </div>
-  <h1>Guess The Word</h1>
-  <h1>Score: 0</h1>
-  <h2>Question 1</h2>
-  <div>
-    <em>P</em>
-    <input maxlength="1" type="text" />
-    <em>K</em>
-    <em>I</em>
-    <input maxlength="1" type="text" />
-    <em>T</em>
-    <input maxlength="1" type="text" />
-    <input maxlength="1" type="text" />
+
+  <div class="form">
+    <h1>Guess The Word</h1>
+    <hr>
+    <div id="guess-word-box">
+      <div>
+        <label for="guessField">Hint: Country</label>
+        <br>
+        <input type="text" value="P" disabled>
+        <input type="text" maxlength="1">
+        <input type="text" value="K" disabled>
+        <input type="text" maxlength="1">
+        <input type="text" value="S" disabled>
+        <br>
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" value="N" disabled>
+        <br>
+        <br>
+        <div><button id="next-btn">Check</button>
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
+
+
+    </div>
+    <hr>
+    <div id="rem-guess">
+      <p>Remaining Questions</p>
+      <h2 id="num-of-guess">10</h2>
+    </div>
   </div>
-  <br />
-  <button>Check</button>
-  <button>Next</button>
+  <br>
 </body>
 
 </html>

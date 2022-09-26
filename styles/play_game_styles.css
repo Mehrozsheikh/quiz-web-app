@@ -1,4 +1,4 @@
-.select-btn{
+.select-btn {
     height: 220px;
     width: 300px;
     background-color: #F98367;
@@ -9,11 +9,27 @@
     border-style: outset;
 }
 
-.select-btn:hover{
+.select-btn:hover {
     background-color: #fa9b84;
     border-style: inset;
 }
 
-#form-body a{
+#form-body a {
     padding: 30px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .select-btn {
+        height: 200px;
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .select-btn {
+        margin-top: 20px;
+        width: 400px;
+        height: 240px;
+        border-radius: 20px;
+    }
 }

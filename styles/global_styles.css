@@ -1,19 +1,19 @@
-#main-body{
-    height: 100vh;
+#main-body {
+    height: fit-content;
     width: 100%;
     background-color: #15202b;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("/assets/images/bg.png");
-    
 }
-#form-body{
-    height: 80vh;
+
+#form-body {
+    height: fit-content;
     width: 70%;
     backdrop-filter: blur(2px);
-    background: hsla(0,0%,100%,.3);
-    border: 1px solid hsla(0,0%,100%,.18);
+    background: hsla(0, 0%, 100%, .3);
+    border: 1px solid hsla(0, 0%, 100%, .18);
     border-radius: 10px;
     padding: 50px;
     position: relative;
@@ -22,8 +22,10 @@
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
-#main-body h1{
+
+#main-body h1 {
     font-size: 50px;
     color: #fff;
     font-weight: 700;
@@ -31,9 +33,11 @@
     text-align: center;
     margin-bottom: 20px;
 }
-#main-body div{
+
+#main-body div {
     text-align: center;
 }
+
 #vl {
     border-left: 2px solid rgb(143, 143, 143);
     height: 60vh;
@@ -42,6 +46,7 @@
     margin-left: -3px;
     border-radius: 5px;
 }
+
 #login-btn {
     background-color: #F98367;
     border: none;
@@ -62,10 +67,11 @@
 #login-btn:hover {
     background-color: #22303c;
     color: white;
+    transition: 150ms ease-in;
 }
 
 
-form input{
+form input {
     width: 75% !important;
     border: none;
     background-color: #e9ecef;
@@ -76,7 +82,7 @@ form input{
     position: relative;
 }
 
-form input:focus{
+form input:focus {
     outline: none;
     border: 1px solid #F98367;
     font-size: 14px;
@@ -84,14 +90,14 @@ form input:focus{
     font-family: sans-serif;
 }
 
-form input::placeholder{
+form input::placeholder {
     color: grey;
     font-size: 14px;
     font-weight: 500;
     font-family: sans-serif;
 }
 
-#forgot-password{
+#forgot-password {
     color: white;
     font-size: 14px;
     font-weight: 500;
@@ -102,11 +108,11 @@ form input::placeholder{
     display: block;
 }
 
-#forgot-password:hover{
+#forgot-password:hover {
     color: #F98367;
 }
 
-#signup-text{
+#signup-text {
     color: white;
     font-size: 15px;
     font-weight: 500;
@@ -115,6 +121,7 @@ form input::placeholder{
     margin: 5px;
     display: block;
 }
-#signup-text:hover{
+
+#signup-text:hover {
     color: #F98367;
 }

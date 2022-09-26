@@ -1,85 +1,118 @@
 #main-body {
-    height: 90vh;
-    width: 100%;
-    background-color: #15202b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/assets/images/bg.png");
+  height: 90vh;
+  width: 100%;
+
+  background-color: #15202b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/bg.png");
+}
+
+#main-body h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  vertical-align: middle;
+}
+
+#main-body p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+
+#play-btn {
+  background-color: #F98367;
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#play-btn:hover {
+  background-color: #22303c;
+  transition: 150ms ease-in;
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#how-play-btn {
+  background-color: #22303c;
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#how-play-btn:hover {
+  background-color: #F98367;
+  transition: 150ms ease-in;
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#home-tagline {
+  float: right;
+  padding-left: 80px;
+  word-wrap: break-word;
+  width: 400px;
+}
+
+@media only screen and (max-width: 870px) {
+  #home-img {
+    display: none;
   }
 
-  #main-body h1 {
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    vertical-align: middle;
+  #home-tagline {
+    padding-left: 0px;
+    word-wrap: break-word;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #home-tagline h1 {
+    font-size: 24px;
   }
 
-  #main-body p {
-    color: white;
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    vertical-align: middle;
+  #home-tagline p {
+    font-size: 16px;
   }
-
-  #play-btn {
-    background-color: #F98367;
-    border: none;
-    color: white;
-    padding: 13px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-
-  #play-btn:hover {
-    background-color: #22303c;
-    border: none;
-    color: white;
-    padding: 13px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-
-  #how-play-btn {
-    background-color: #22303c;
-    border: none;
-    color: white;
-    padding: 13px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-
-  #how-play-btn:hover {
-    background-color: #F98367;
-    border: none;
-    color: white;
-    padding: 13px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 6px;
-  }
+}

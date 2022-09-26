@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/assets/images/favicon.ico">
   <link rel="stylesheet" href="/styles/play_nav_styles.css">
+  <link rel="stylesheet" href="/styles/games_styles.css">
   <title>Elite Quiz | Quiz Zone</title>
 </head>
 
@@ -22,19 +23,29 @@
     </nav>
   </div>
 
-  <h1>Quiz Mania</h1>
-  <h1>Score: 0</h1>
-  <h2>Question 1</h2>
-  <p>What is the capital of Pakistan?</p>
-  <button>Lahore</button>
-  <br />
-  <button>Islamabad</button>
-  <br />
-  <button>Karachi</button>
-  <br />
-  <button>Peshawar</button>
-  <br />
-  <button>Next</button>
+  <div class="form">
+    <h1>Quiz Mania</h1>
+    <hr>
+    <div id="mid-box1">
+      <label for="guessField">What is the capital of Pakistan?</label>
+      <button class="answer-btn">Lahore</button>
+      <br />
+      <button class="answer-btn">Islamabad</button>
+      <br />
+      <button class="answer-btn">Karachi</button>
+      <br />
+      <button class="answer-btn">Peshawar</button>
+      <br />
+      <button id="next-btn">Next</button>
+    </div>
+    <hr>
+    <div id="rem-guess">
+      <p>Remaining Questions</p>
+      <h2 id="num-of-guess">10</h2>
+    </div>
+
+  </div>
+  <br>
 </body>
 
 </html>

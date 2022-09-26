@@ -1,43 +1,65 @@
 body {
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .container {
-    background-color: #15202b;
-    clear: both;
-    overflow: auto;
-  }
+.container {
+  background-color: #15202b;
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
 
-  .logo img {
-    float: left;
-    padding: 10px;
-    padding-right: 20px;
+.logo img {
+  float: left;
+  padding: 10px;
+  padding-right: 20px;
 
-  }
+}
 
-  .nav-bar-list {
-    display: inline-block;
-    padding: 12px;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
+.nav-bar-list {
+  display: inline-block;
+  padding: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
 
-  .nav-bar-item {
-    color: #F98367;
-    text-decoration: none;
-    font-size: 18px;
-  }
+.nav-bar-item {
+  color: #F98367;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 14px;
+  border-radius: 10px;
+}
 
-  .nav-bar-item:hover {
-    color: #fa7d5e;
-    text-decoration: underline;
-  }
+.nav-bar-item:hover {
+  color: white;
+  background-color: #F98367;
+  transition: 150ms ease-in;
+}
 
+#account-btn {
+  float: right;
+  padding: 12px;
+  padding-right: 30px;
+  list-style-type: none;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#menu-btn {
+  float: right;
+  display: none;
+  padding: 12px;
+}
+
+@media only screen and (max-width: 890px) {
+
+  .nav-bar-list,
   #account-btn {
-    float: right;
-    padding: 12px;
-    padding-right: 30px;
-    list-style-type: none;
-    font-family: sans-serif;
-    font-weight: bold;
+    display: none;
   }
+
+  #menu-btn {
+    display: block;
+  }
+}

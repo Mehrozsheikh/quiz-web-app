@@ -1,0 +1,14 @@
+@media only screen and (max-width: 958px) {
+    #vl {
+        display: none;
+    }
+
+    #form-body img {
+        display: none;
+    }
+
+    #form-body {
+        grid-template-columns: 1fr;
+
+    }
+}

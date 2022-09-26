@@ -1,19 +1,52 @@
-#profile-pic{
+#profile-pic {
     border-radius: 50%;
     border: 2px solid #F98367;
     box-shadow: 0 0 5px #F98367;
 }
 
-#user-email{
+#user-email {
     font-size: 16;
     font-family: sans-serif;
     display: inline-block;
     color: white;
 }
 
-h2{
+h2 {
     font-size: 20;
     font-family: sans-serif;
     color: white;
     margin: 0;
+}
+
+#hr-line {
+    outline: none;
+    border: 1px solid rgb(143, 143, 143);
+    width: 80%;
+    display: none;
+}
+
+#mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 880px) {
+    #form-body {
+        grid-template-columns: 1fr;
+    }
+
+    #vl {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #hr-line {
+        display: block;
+    }
 }

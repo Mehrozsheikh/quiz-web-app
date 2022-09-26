@@ -6,8 +6,8 @@ body {
 
 .form {
     background: #F98367;
-    width: 380px;
-    height: 500px;
+    width: 400px;
+    height: 570px;
     color: white;
     margin: auto;
     margin-top: 10px;
@@ -69,9 +69,9 @@ p {
 h2 {
     margin-left: 165px;
     margin-right: 165px;
-    padding: 2px;
+    padding: 10px;
     justify-items: center;
-    margin-top: -10px;
+    margin-top: 10px;
     font-size: 35px;
     border: 2px solid #ffefde;
     border-radius: 50%;
@@ -90,6 +90,13 @@ h2 {
 
 #play-again {
     display: none;
+}
+
+#guess-word-box {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #mid-box2 {
@@ -136,4 +143,54 @@ h2 {
     transition: ease-in;
     transition-duration: 0.1s;
     transform: translateY(-1px);
+}
+
+.answer-btn {
+    height: 38px;
+    width: 90%;
+    margin: 10px;
+    background-color: #ffefde;
+    border: 2px solid #22303c;
+    border-radius: 10px;
+    color: #F98367;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#next-btn {
+    background-color: #F98367;
+    border: 2px solid #22303c;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30%;
+    height: 40px;
+}
+
+#next-btn:hover {
+    background-color: #22303c;
+    transition: 150ms ease-in;
+}
+
+#guess-word-box input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #F98367;
+    background-color: #ffefde;
+    border: 2px solid #22303c;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+    .form {
+        width: 340px;
+    }
 }
