@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="/styles/nav_bar_styles.css">
   <link rel="stylesheet" href="/styles/footer_styles.css">
   <link rel="stylesheet" href="/styles/global_styles.css">
+  <link rel="stylesheet" href="/styles/mobile_navbar_styles.css">
+  <script src="/scripts/mobile_toggle_menu.js"></script>
   <script src="https://kit.fontawesome.com/dcfeb72d90.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/styles/leaderboard_styles.css">
   <title>Elite Quiz | Leaderboard</title>
@@ -32,13 +34,23 @@
               <a class=" nav-bar-item" href="login_page.html">Account</a>
             </li>
           </div>
-          <div id="menu-btn">
-            <i><i class="fa fa-bars" style="font-size:22px; color: #F98367; padding-right: 10px;"></i></i>
-          </div>
+          <a href="javascript:void(0);" id="menu-btn" onclick="openMenu()">
+            <i class="fa fa-bars" style="font-size:22px; color: #F98367; padding-right: 10px;"></i>
+          </a>
         </ul>
       </nav>
     </div>
 
+  </div>
+  <div id="mobile-nav">
+
+    <ul>
+      <li><a class="mob-nav-item" href="/index.html">Home</a></li>
+      <li><a class="mob-nav-item" href="leaderboard_page.html">Leaderboard</a></li>
+      <li><a class="mob-nav-item" href="playgame_page.html">Play Game</a></li>
+      <li><a class="mob-nav-item" href="about_page.html">About</a></li>
+      <li><a class=" mob-nav-item" href="login_page.html">Account</a></li>
+    </ul>
   </div>
   <div id="main-body">
     <div id="form-body" style=" grid-template-columns: 1fr; justify-content: unset; align-items: unset;">
