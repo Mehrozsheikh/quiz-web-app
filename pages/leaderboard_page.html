@@ -5,47 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/assets/images/favicon.ico">
-  <link rel="stylesheet" href="/styles/nav_bar_styles.css">
-  <link rel="stylesheet" href="/styles/footer_styles.css">
-  <link rel="stylesheet" href="/styles/global_styles.css">
-  <link rel="stylesheet" href="/styles/mobile_navbar_styles.css">
-  <script src="/scripts/mobile_toggle_menu.js"></script>
+  <link rel="icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../styles/nav_bar_styles.css">
+  <link rel="stylesheet" href="../styles/footer_styles.css">
+  <link rel="stylesheet" href="../styles/global_styles.css">
+  <link rel="stylesheet" href="../styles/mobile_navbar_styles.css">
+  <script src="../scripts/mobile_toggle_menu.js"></script>
   <script src="https://kit.fontawesome.com/dcfeb72d90.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/styles/leaderboard_styles.css">
+  <link rel="stylesheet" href="../styles/leaderboard_styles.css">
   <title>Elite Quiz | Leaderboard</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="logo">
-      <img width="150px" src="/assets/images/logo.png" alt="logo" />
-    </div>
-    <div>
-      <nav>
-        <ul>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="/index.html">Home</a></li>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="leaderboard_page.html">Leaderboard</a>
-          </li>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="playgame_page.html">Play Game</a></li>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="about_page.html">About</a></li>
-          <div id="account-btn">
-            <li> <i class="fa fa-user-plus" style="font-size:18px; color: #F98367; padding-right: 10px;"></i>
-              <a class=" nav-bar-item" href="login_page.html">Account</a>
-            </li>
-          </div>
-          <a href="javascript:void(0);" id="menu-btn" onclick="openMenu()">
-            <i class="fa fa-bars" style="font-size:22px; color: #F98367; padding-right: 10px;"></i>
-          </a>
-        </ul>
-      </nav>
-    </div>
-
+    <?php include 'navbar.php'; ?>
   </div>
   <div id="mobile-nav">
 
     <ul>
-      <li><a class="mob-nav-item" href="/index.html">Home</a></li>
+      <li><a class="mob-nav-item" href="../index.html">Home</a></li>
       <li><a class="mob-nav-item" href="leaderboard_page.html">Leaderboard</a></li>
       <li><a class="mob-nav-item" href="playgame_page.html">Play Game</a></li>
       <li><a class="mob-nav-item" href="about_page.html">About</a></li>
@@ -55,12 +33,39 @@
   <div id="main-body">
     <div id="form-body" style=" grid-template-columns: 1fr; justify-content: unset; align-items: unset;">
       <h1>Leaderboard</h1>
-      <table>
-        <tr>
-          <th>Rank</th>
-          <th>Name</th>
-          <th>Score</th>
-        </tr>
+
+      <?php
+        $con=mysqli_connect("localhost","root","root","quiz_db");
+        // Check connection
+        if (mysqli_connect_errno()){
+          echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        }
+
+        $result = mysqli_query($con,"SELECT * FROM users_data");
+
+        echo "<table>";
+        echo "<tr>";
+        echo "<th>Rank</th>";
+        echo "<th>Name</th>";
+        echo "<th>Score</th>";
+        echo "</tr>";
+
+        while($row = mysqli_fetch_array($result))
+        {
+        echo "<tr>";
+        echo "<td>" . $row['rank'] . "</td>";
+        echo "<td>" . $row['name'] . "</td>";
+        echo "<td>" . $row['points'] . "</td>";
+        echo "</tr>";
+        }
+        echo "</table>";
+
+        mysqli_close($con);
+      ?>
+
+
+      <!-- <table>
+
         <tr>
           <td>1</td>
           <td>Mehroz</td>
@@ -143,14 +148,14 @@
           </td>
         </tr>
 
-      </table>
+      </table> -->
     </div>
   </div>
 
   <footer>
     <div id="footer-content">
       <div id="footer-left">
-        <img width="150px" src="/assets/images/logo.png" alt="logo" />
+        <img width="150px" src="../assets/images/logo.png" alt="logo" />
         <p>Elite Quiz is a quiz game that tests your knowledge on a variety of topics. You can play the game in
           four
           different

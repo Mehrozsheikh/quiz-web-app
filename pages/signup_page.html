@@ -5,47 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/assets/images/favicon.ico">
-  <link rel="stylesheet" href="/styles/nav_bar_styles.css">
-  <link rel="stylesheet" href="/styles/footer_styles.css">
-  <link rel="stylesheet" href="/styles/global_styles.css">
-  <link rel="stylesheet" href="/styles/auth_pages_styles.css">
-  <link rel="stylesheet" href="/styles/mobile_navbar_styles.css">
-  <script src="/scripts/mobile_toggle_menu.js"></script>
+  <link rel="icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../styles/nav_bar_styles.css">
+  <link rel="stylesheet" href="../styles/footer_styles.css">
+  <link rel="stylesheet" href="../styles/global_styles.css">
+  <link rel="stylesheet" href="../styles/auth_pages_styles.css">
+  <link rel="stylesheet" href="../styles/mobile_navbar_styles.css">
+  <script src="../scripts/mobile_toggle_menu.js"></script>
   <script src="https://kit.fontawesome.com/dcfeb72d90.js" crossorigin="anonymous"></script>
   <title>Elite Quiz | Sign Up</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="logo">
-      <img width="150px" src="/assets/images/logo.png" alt="logo" />
-    </div>
-    <div>
-      <nav>
-        <ul>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="/index.html">Home</a></li>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="leaderboard_page.html">Leaderboard</a>
-          </li>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="playgame_page.html">Play Game</a></li>
-          <li class="nav-bar-list"><a class="nav-bar-item" href="about_page.html">About</a></li>
-          <div id="account-btn">
-            <li> <i class="fa fa-user-plus" style="font-size:18px; color: #F98367; padding-right: 10px;"></i>
-              <a class=" nav-bar-item" href="login_page.html">Account</a>
-            </li>
-          </div>
-          <a href="javascript:void(0);" id="menu-btn" onclick="openMenu()">
-            <i class="fa fa-bars" style="font-size:22px; color: #F98367; padding-right: 10px;"></i>
-          </a>
-        </ul>
-      </nav>
-    </div>
-
+    <?php include 'navbar.php'; ?>
   </div>
   <div id="mobile-nav">
 
     <ul>
-      <li><a class="mob-nav-item" href="/index.html">Home</a></li>
+      <li class="nav-bar-list"><a class="nav-bar-item" href="../index.html">Home</a></li>
       <li><a class="mob-nav-item" href="leaderboard_page.html">Leaderboard</a></li>
       <li><a class="mob-nav-item" href="playgame_page.html">Play Game</a></li>
       <li><a class="mob-nav-item" href="about_page.html">About</a></li>
@@ -55,25 +33,31 @@
   <div id="main-body">
     <div id="form-body">
       <div>
-        <img width="330px" src="/assets/images/login_image.png" alt="login_image">
+        <img width="330px" src="../assets/images/login_image.png" alt="login_image">
       </div>
       <div id="vl"></div>
       <div>
         <h1>SIGN UP</h1>
         <br>
-        <form action="account_page.html">
-          <input type="text" placeholder="Enter Your Name" name="name" />
+        <form action="signup.php" method="POST">
+          <input type="text" placeholder="Enter Your Name" name="name" id="username" required />
+          <p class="error-msg" id="err-name"> * Username can't be empty</p>
           <br>
-          <input type="email" placeholder="Enter Your Email" name="Email" />
+          <input type="email" placeholder="Enter Your Email" name="email" id="email" required />
+          <p class="error-msg" id="err-email"> * Please enter valid email</p>
           <br>
-          <input type="password" placeholder="Enter Your Password" name="password" />
+          <input type="password" placeholder="Enter Your Password" name="password" id="password" required />
+          <p class="error-msg" id="err-password"> * Password should contain atleast 6 characters</p>
           <br>
-          <input type="password" placeholder="Confirm Your Password" name="confirm-password" />
+          <input type="password" placeholder="Confirm Your Password" name="confirm-password" id="confirm-password"
+            required />
+          <p class="error-msg" id="err-conpassword"> * Confirm Password doesn't match with Password.</p>
           <br>
-          <div style="width: 90%;">
+          <br>
+          <div style=" width: 90%;">
             <a id="forgot-password" href="">Forgot Password?</a>
           </div>
-          <button id="login-btn">Sign Up</button>
+          <button type="submit" name="signup" id="signup-btn" value="Submit">Sign Up</button>
           <br>
           <a id="signup-text" href="login_page.html">Already have an Account? <b>Login</b></a>
         </form>
@@ -85,7 +69,7 @@
   <footer>
     <div id="footer-content">
       <div id="footer-left">
-        <img width="150px" src="/assets/images/logo.png" alt="logo" />
+        <img width="150px" src="../assets/images/logo.png" alt="logo" />
         <p>Elite Quiz is a quiz game that tests your knowledge on a variety of topics. You can play the game in
           four
           different
@@ -137,8 +121,9 @@
             style="font-size:20px; color: white; padding-right: 20px;"></i></a>
       </div>
     </div>
-
   </footer>
+  <script src="http://localhost/quizwebapp/jquery/jquery.min.js"></script>
+  <script src="http://localhost/quizwebapp/scripts/form_validation.js"></script>
 </body>
 
 </html>

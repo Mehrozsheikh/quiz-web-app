@@ -70,7 +70,30 @@ body {
     height: 42px;
 }
 
+#signup-btn {
+    background-color: #F98367;
+    border: none;
+    color: white;
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 80%;
+    height: 42px;
+}
+
 #login-btn:hover {
+    background-color: #22303c;
+    color: white;
+    transition: 150ms ease-in;
+}
+
+#signup-btn:hover {
     background-color: #22303c;
     color: white;
     transition: 150ms ease-in;
@@ -102,6 +125,18 @@ form input::placeholder {
     font-weight: 500;
     font-family: sans-serif;
 }
+
+.error-msg {
+    color: rgb(255, 44, 44);
+    font-size: 13px;
+    display: none;
+    font-weight: bold;
+    margin-block-start: 0em;
+    margin-block-end: 0.5em;
+    float: left;
+    padding-left: 50px;
+}
+
 
 #forgot-password {
     color: white;

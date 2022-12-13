@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+.nav-container {
+    background-color: #15202b;
+    clear: both;
+    overflow: auto;
+}
+
+.prof-img {
+    margin-top: 20px;
+    width: 180px;
+    border-radius: 50%;
+    padding: 7px;
+    border: 9px solid rgb(173, 173, 173);
+}
+
+h2 {
+    color: white;
+}
+
+h4 {
+    margin-top: 25px;
+    color: white;
+}
+
+
+.score {
+    width: 150px;
+    font-size: 34px;
+    color: white;
+    font-weight: bold;
+    padding: 40px;
+    border-radius: 50%;
+    border: 9px solid rgb(173, 173, 173);
+}
+
+.logo img {
+    float: left;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.btn-secondary {
+    margin-top: 25px;
+    width: 120px;
+    height: 45px;
+    background-color: #15202b;
+    border-color: #15202b;
+}
+
+.btn-secondary:hover {
+    background-color: #363636cb;
+    border-color: #363636cb;
+}
+
+#exit-btn button {
+    float: right;
+    background-color: #F98367;
+    border: none;
+    color: white;
+    padding: 9px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 16px 20px 0 0;
+    cursor: pointer;
+    border-radius: 6px;
+}

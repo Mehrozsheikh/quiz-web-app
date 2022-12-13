@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/play_nav_styles.css">
-  <link rel="stylesheet" href="/styles/games_styles.css">
-  <link rel="icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="../styles/play_nav_styles.css">
+  <link rel="stylesheet" href="../styles/games_styles.css">
+  <link rel="icon" href="../assets/images/favicon.ico">
   <title>Elite Quiz | Guess The Word</title>
 </head>
 
@@ -15,10 +15,10 @@
   <div class="container">
     <nav>
       <div class="logo">
-        <img width="150px" src="/assets/images/logo.png" alt="logo" />
+        <img width="150px" src="../assets/images/logo.png" alt="logo" />
       </div>
       <div id="exit-btn">
-        <a href="/pages/playgame_page.html"><button>Exit</button></a>
+        <a href="../pages/playgame_page.html"><button>Exit</button></a>
       </div>
     </nav>
   </div>
@@ -26,27 +26,27 @@
   <div class="form">
     <h1>Guess The Word</h1>
     <hr>
-    <div id="guess-word-box">
-      <div>
-        <label for="guessField">Hint: Country</label>
-        <br>
-        <input type="text" value="P" disabled>
-        <input type="text" maxlength="1">
-        <input type="text" value="K" disabled>
-        <input type="text" maxlength="1">
-        <input type="text" value="S" disabled>
-        <br>
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" value="N" disabled>
-        <br>
-        <br>
-        <div><button id="next-btn">Check</button>
-          <button id="next-btn">Next</button>
-        </div>
+    <!-- <h1>Guess the Word</h1>
+    <div class="content">
+
+      <div class="details">
+        <p class="hint">Hint: <span></span></p>
+        <p class="guess-left">Remaining guesses: <span></span></p>
+        <p class="wrong-letter">Wrong letters: <span></span></p>
       </div>
-
-
+      <button class="reset-btn">Reset Game</button> -->
+    <!-- </div> -->
+    <div id="guess-word-box">
+      <div class="content">
+        <input type="text" class="typing-input" maxlength="1">
+        <div class="inputs"></div>
+        <div class="details">
+          <p class="hint">Hint: <span></span></p>
+          <p class="guess-left">Remaining guesses: <span></span></p>
+          <p class="wrong-letter">Wrong letters: <span></span></p>
+        </div>
+        <button class="reset-btn">Next</button>
+      </div>
     </div>
     <hr>
     <div id="rem-guess">
@@ -55,6 +55,8 @@
     </div>
   </div>
   <br>
+  <script src="../scripts/words_data.js"></script>
+  <script src="../scripts/guess_word.js"></script>
 </body>
 
 </html>
